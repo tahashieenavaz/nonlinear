@@ -4,6 +4,8 @@ A hand-curated collections of activations functions for deep learning research.
 
 ## Channel-Based Activation Functions
 
+<div align="center">
+
 | Activation Function | Formula |
 |---|---|
 | [FPAF](nonlinear/channel_based/FPAF.py) | $f(x) = a \cdot \mu(x)$ if $x \geq 0$, else $b \cdot \nu(x)$ |
@@ -20,3 +22,5 @@ A hand-curated collections of activations functions for deep learning research.
 | [PTELU](nonlinear/channel_based/PTELU.py) | $f(x) = x$ if $x \geq 0$, else $\vert a \vert \tanh(\vert b \vert x)$ |
 | [TaLU](nonlinear/channel_based/TaLU.py) | $f(x) = x$ if $x \geq \vert b \vert$; $\tanh(x)$ if $x > \vert a \vert$; else $\tanh(\vert a \vert)$ |
 | [TanhLU](nonlinear/channel_based/TanhLU.py) | $f(x) = a \tanh(cx) + bx$ |
+
+</div>
