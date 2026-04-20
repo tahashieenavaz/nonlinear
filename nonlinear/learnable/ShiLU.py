@@ -1,9 +1,9 @@
 import torch
-from ..ChannelBasedActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class ShiLU(LearnableActivationFunction):
-    def __init__(self, channels: int, *, a: float = 1.0, b: float= 0.0):
+class ShiLU(ChannelBasedActivationFunction):
+    def __init__(self, channels: int, *, a: float = 1.0, b: float = 0.0):
         super().__init__()
         self.a = torch.nn.Parameter(torch.full((channels,), a))
         self.b = torch.nn.Parameter(torch.full((channels,), b))

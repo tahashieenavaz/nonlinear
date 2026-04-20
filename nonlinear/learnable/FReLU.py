@@ -1,8 +1,8 @@
 import torch
-from ..LearnableActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class FReLU(LearnableActivationFunction):
+class FReLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, b: float = 0.0):
         super().__init__()
         self.b = torch.nn.Parameter(torch.full((channels,), b))

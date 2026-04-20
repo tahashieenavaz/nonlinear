@@ -1,8 +1,8 @@
 import torch
-from ..LearnableActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class StarReLU(LearnableActivationFunction):
+class StarReLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, a: float = 0.8944, b: float = -0.4472):
         super().__init__()
         self.a = torch.nn.Parameter(torch.full((channels,), a))

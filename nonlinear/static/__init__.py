@@ -72,4 +72,4 @@ from .GCU import GCU
 from .SigmoidDerivative import SigmoidDerivative
 from .Smish import Smish
 from .SigLU import SigLU
-from .AdaptiveActivationFunction import AdaptiveActivationFunction
+from .AOAF import AOAF

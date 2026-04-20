@@ -1,8 +1,8 @@
 import torch
-from ..LearnableActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class DualLine(LearnableActivationFunction):
+class DualLine(ChannelBasedActivationFunction):
     def __init__(
         self, channels: int, *, a: float = 1.0, b: float = 0.01, m: float = -0.22
     ):

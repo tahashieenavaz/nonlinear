@@ -1,7 +1,8 @@
 import torch
-from ..LearnableActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
-class PREU(LearnableActivationFunction):
+
+class PREU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, a: float = 1.0, b: float = 1.0):
         super().__init__()
         self.a = torch.nn.Parameter(torch.full((channels,), a))
