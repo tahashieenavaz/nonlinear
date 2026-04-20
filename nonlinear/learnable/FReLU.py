@@ -1,13 +1,13 @@
 import torch
-from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
+from ..LearnableActivationFunction import LearnableActivationFunction
 
 
-class FReLU(ChannelBasedActivationFunction):
-    def __init__(self):
+class FReLU(LearnableActivationFunction):
+    def __init__(self, channels: int, *, b: float = 0.0):
         super().__init__()
-        self.b = None
+        self.b = torch.nn.Parameter(torch.full((channels,), b))
 
-    def forward(self, x: torch.Tensor):
-        self.initialize(x, "b")
-        b = self.b.view(self.parameter_shape(x))
-        return torch.where(x >= 0, x + b, b)
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        shape = self.get_shape(x)
+        b = self.b.view(shape)
+        return torch.relu(x) + b

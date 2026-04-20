@@ -1,15 +1,15 @@
 import torch
-from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
+from ..LearnableActivationFunction import LearnableActivationFunction
 
 
-class StarReLU(ChannelBasedActivationFunction):
-    def __init__(self):
+class StarReLU(LearnableActivationFunction):
+    def __init__(self, channels: int, *, a: float = 0.8944, b: float = -0.4472):
         super().__init__()
-        self.a = None
-        self.b = None
+        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.b = torch.nn.Parameter(torch.full((channels,), b))
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        self.initialize(x, ["a", "b"], [0.8944, -0.4472])
-        a = self.a.view(self.parameter_shape(x))
-        b = self.b.view(self.parameter_shape(x))
+        shape = self.get_shape(x)
+        a = self.a.view(shape)
+        b = self.b.view(shape)
         return a * torch.relu(x).pow(2) + b

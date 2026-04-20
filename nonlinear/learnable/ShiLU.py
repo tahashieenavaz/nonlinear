@@ -1,15 +1,15 @@
 import torch
-from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
+from ..ChannelBasedActivationFunction import LearnableActivationFunction
 
 
-class ShiLU(ChannelBasedActivationFunction):
-    def __init__(self):
+class ShiLU(LearnableActivationFunction):
+    def __init__(self, channels: int, *, a: float = 1.0, b: float= 0.0):
         super().__init__()
-        self.a = None
-        self.b = None
+        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.b = torch.nn.Parameter(torch.full((channels,), b))
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        self.initialize(x, ["a", "b"])
-        a = self.a.view(self.parameter_shape(x))
-        b = self.b.view(self.parameter_shape(x))
-        return torch.relu(x) * a + b
+        shape = self.get_shape(x)
+        a = self.a.view(shape)
+        b = self.b.view(shape)
+        return a * torch.relu(x) + b

@@ -1,13 +1,12 @@
 import torch
-from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
+from ..LearnableActivationFunction import LearnableActivationFunction
 
-
-class LeLeLU(ChannelBasedActivationFunction):
-    def __init__(self):
+class LeLeLU(LearnableActivationFunction):
+    def __init__(self, channels: int, *, a: float = 1.0):
         super().__init__()
-        self.a = None
+        self.a = torch.nn.Parameter(torch.full((channels,), a))
 
-    def forward(self, x: torch.Tensor):
-        self.initialize(x, "a")
-        a = self.a.view(self.parameter_shape(x))
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        shape = self.get_shape(x)
+        a = self.a.view(shape)
         return torch.where(x >= 0, a * x, 0.01 * a * x)
