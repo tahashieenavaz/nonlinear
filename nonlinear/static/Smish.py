@@ -1,5 +1,5 @@
 import torch
-from .ActivationFunction import ActivationFunction
+from ..ActivationFunction import ActivationFunction
 
 
 class Smish(ActivationFunction):

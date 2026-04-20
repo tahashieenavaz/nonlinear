@@ -1,6 +1,6 @@
 import torch
 import math
-from .ActivationFunction import ActivationFunction
+from ..ActivationFunction import ActivationFunction
 
 
 class CaLU(ActivationFunction):

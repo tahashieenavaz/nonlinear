@@ -46,7 +46,7 @@ from .DerivativeSiLU import DerivativeSiLU
 from .NLReLU import NLReLU
 from .IpLU import IpLU
 from .ThLU import ThLU
-from .ActivationFunction import ActivationFunction
+from ..ActivationFunction import ActivationFunction
 from .RReLU import RReLU
 from .PolyLU import PolyLU
 from .Suish import Suish
