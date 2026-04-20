@@ -8,7 +8,7 @@ class RReLU(ActivationFunction):
         self.lower = lower
         self.upper = upper
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         if self.training:
             a = torch.empty_like(x).uniform_(self.lower, self.upper)
         else:
