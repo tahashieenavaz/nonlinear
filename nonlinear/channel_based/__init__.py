@@ -7,3 +7,5 @@ from .PREU import PREU
 from .ShiLU import ShiLU
 from .StarReLU import StarReLU
 from .EPReLU import EPReLU
+from .PairedReLU import PairedReLU
+from .RMAF import RMAF
