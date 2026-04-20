@@ -9,3 +9,4 @@ from .StarReLU import StarReLU
 from .EPReLU import EPReLU
 from .PairedReLU import PairedReLU
 from .RMAF import RMAF
+from .PTELU import PTELU
