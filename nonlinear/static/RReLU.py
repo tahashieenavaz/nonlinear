@@ -3,11 +3,10 @@ from ..ActivationFunction import ActivationFunction
 
 
 class RReLU(ActivationFunction):
-    def __init__(self, lower: int = 3, upper: int = 8, training: bool = False):
-        super(RReLU, self).__init__()
+    def __init__(self, *, lower: float = 3.0, upper: float = 8.0):
+        super().__init__()
         self.lower = lower
         self.upper = upper
-        self.training = training
 
     def forward(self, x):
         if self.training:
