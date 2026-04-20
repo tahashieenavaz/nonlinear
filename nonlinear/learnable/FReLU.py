@@ -1,9 +1,8 @@
 import torch
-from ...AdaptiveActivationFunction import AdaptiveActivationFunction
-from ...concerns import ChannelBased
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class FReLU(AdaptiveActivationFunction, ChannelBased):
+class FReLU(ChannelBasedActivationFunction):
     def __init__(self):
         super().__init__()
         self.b = None

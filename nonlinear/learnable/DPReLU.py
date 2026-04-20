@@ -1,9 +1,8 @@
 import torch
-from ...AdaptiveActivationFunction import AdaptiveActivationFunction
-from ...concerns import ChannelBased
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class DPReLU(AdaptiveActivationFunction, ChannelBased):
+class DPReLU(ChannelBasedActivationFunction):
     def __init__(self):
         super().__init__()
         self.a = None

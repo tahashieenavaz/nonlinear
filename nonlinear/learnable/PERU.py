@@ -1,9 +1,8 @@
 import torch
-from ...AdaptiveActivationFunction import AdaptiveActivationFunction
-from ...concerns import ChannelBased
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class PERU(AdaptiveActivationFunction, ChannelBased):
+class PERU(ChannelBasedActivationFunction):
     def __init__(self):
         super().__init__()
         self.a = None
