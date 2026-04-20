@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonlinear"
+version = "0.0.1"
+authors = [
+  { name="Taha Shieenavaz", email="tahashieenavaz@gmail.com" },
+]
+description = "A hand-curated collections of activations functions for deep learning research."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["torch"]
+keywords = ["activation function", "deep learning", "machine learning", "non-linearity"]
+license = { file = "LICENSE" }
+urls = { Homepage="https://github.com/tahashieenavaz/nonlinear", Repository="https://github.com/tahashieenavaz/nonlinear", Documentation="https://github.com/tahashieenavaz/nonlinear#readme" }
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*", "docs*", "figures*", "mermaid*", "scripts*"]
+
+[tool.setuptools.package-data]
+nonlinear = ["*.md", "*.txt", "*.png"]
