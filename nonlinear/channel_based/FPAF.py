@@ -1,0 +1,26 @@
+import torch
+from typing import Callable
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
+
+
+class FPAF(ChannelBasedActivationFunction):
+    def __init__(
+        self,
+        channels: int,
+        *,
+        mu: Callable[[torch.Tensor], torch.Tensor] = torch.sin,
+        nu: Callable[[torch.Tensor], torch.Tensor] = torch.exp,
+        a: float = 1.0,
+        b: float = 1.0,
+    ):
+        super().__init__()
+        self.mu = mu
+        self.nu = nu
+        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.b = torch.nn.Parameter(torch.full((channels,), b))
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        shape = self.get_shape(x)
+        a = self.a.view(shape)
+        b = self.b.view(shape)
+        return torch.where(x >= 0, a * self.mu(x), b * self.nu(x))
