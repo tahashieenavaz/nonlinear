@@ -1,3 +1,3 @@
-from ..ActivationFunction import ActivationFunction
+from .ActivationFunction import ActivationFunction
 class LearnableActivationFunction(ActivationFunction):
     pass

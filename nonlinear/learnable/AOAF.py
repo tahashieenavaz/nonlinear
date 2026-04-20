@@ -1,9 +1,8 @@
 import torch
-from ...concerns import ChannelBased
-from .LearnableActivationFunction import LearnableActivationFunction
+from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
-class AOAF(AdaptiveActivationFunction, ChannelBased):
+class AOAF(ChannelBasedActivationFunction):
     def __init__(self, b: float = 0.17, c: float = 0.17):
         super().__init__()
         self.a = None
