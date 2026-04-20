@@ -24,3 +24,16 @@ A hand-curated collections of activations functions for deep learning research.
 | [TanhLU](nonlinear/channel_based/TanhLU.py) | $f(x) = a \tanh(cx) + bx$ |
 
 </div>
+
+## Static Activation Functions
+
+<div align="center">
+
+| Activation Function | Formula |
+|---|---|
+| [BaseDLReLU](nonlinear/static/BaseDLReLU.py) | $f(x) = x$ if $x \geq 0$, else $(a \cdot b_t) x$ (linear) or $(a \exp(-b_t)) x$ (exp) |
+| [GCU](nonlinear/static/GCU.py) | $f(x) = x \cos(x)$ |
+| [PoLU](nonlinear/static/PoLU.py) | $f(x) = x$ if $x \geq 0$, else $(1 - x)^{-\alpha} - 1$ |
+| [SlopedReLU](nonlinear/static/SlopedReLU.py) | $f(x) = \alpha x$ if $x \geq 0$, else $0$ |
+
+</div>
