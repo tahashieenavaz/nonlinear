@@ -10,3 +10,5 @@ from .EPReLU import EPReLU
 from .PairedReLU import PairedReLU
 from .RMAF import RMAF
 from .PTELU import PTELU
+from .TaLU import TaLU
+from .TanhLU import TanhLU
