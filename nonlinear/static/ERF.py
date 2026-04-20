@@ -2,7 +2,7 @@ import torch
 
 
 class ERF(torch.nn.Module):
-    def __init__(self, alpha=1.0):
+    def __init__(self, alpha: float=1.0):
         super().__init__()
         self.alpha = torch.nn.Parameter(torch.tensor(alpha))
 

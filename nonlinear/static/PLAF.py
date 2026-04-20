@@ -3,7 +3,7 @@ from ..ActivationFunction import ActivationFunction
 
 
 class PLAF(ActivationFunction):
-    def __init__(self, d: float = 2):
+    def __init__(self, d: float = 2.0):
         super().__init__()
         self.d = d
 
