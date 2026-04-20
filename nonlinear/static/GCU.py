@@ -1,9 +1,10 @@
 import torch
+from ..ActivationFunction import ActivationFunction
 
 
-class GCU(torch.nn.Module):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+class GCU(ActivationFunction):
+    def __init__(self):
+        super().__init__()
 
     def forward(self, x: torch.Tensor):
         return x * torch.cos(x)
