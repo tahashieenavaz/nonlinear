@@ -4,8 +4,6 @@ A hand-curated collections of activations functions for deep learning research.
 
 ## Channel-Based Activation Functions
 
-Here are the formulas for the activation functions implemented in `__init__.py`:
-
 - **FPAF**: $f(x) = \begin{cases} a \cdot \mu(x) & \text{if } x \geq 0 \\\\ b \cdot \nu(x) & \text{otherwise} \end{cases}$
 - **DPReLU**: $f(x) = \begin{cases} a x & \text{if } x \geq 0 \\\\ b x & \text{otherwise} \end{cases}$
 - **DualLine**: $f(x) = \begin{cases} a x + m & \text{if } x \geq 0 \\\\ b x + m & \text{otherwise} \end{cases}$
