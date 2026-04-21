@@ -1,6 +1,12 @@
 import torch
+from ..ActivationFunction import ActivationFunction
 
 
-class CReLU(torch.nn.Module):
-    def forward(self, x: torch.Tensor):
-        return torch.cat((torch.relu(x), torch.relu(-x)), dim=1)
+class CReLU(ActivationFunction):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        a = torch.relu(x)
+        b = torch.relu(-x)
+        return torch.cat((a, b), dim=1)

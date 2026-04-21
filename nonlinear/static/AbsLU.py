@@ -3,7 +3,7 @@ from ..ActivationFunction import ActivationFunction
 
 
 class AbsLU(ActivationFunction):
-    def __init__(self, alpha: float = 0.5):
+    def __init__(self, *, alpha: float = 0.5):
         super().__init__()
         self.alpha = alpha
 
