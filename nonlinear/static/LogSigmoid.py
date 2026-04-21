@@ -6,5 +6,5 @@ class LogSigmoid(ActivationFunction):
     def __init__(self):
         super().__init__()
 
-    def forward(self, x: torch.Tensor):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         return torch.log(torch.sigmoid(x))
