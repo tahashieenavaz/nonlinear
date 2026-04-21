@@ -5,7 +5,7 @@ from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 class LeLeLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, a: float = 1.0):
         super().__init__()
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)

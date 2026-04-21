@@ -5,8 +5,8 @@ from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 class TaLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, a: float = -2.0, b: float = 4.0):
         super().__init__()
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
-        self.b = torch.nn.Parameter(torch.full((channels,), b))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
+        self.b = self.get_parameter(channels=channels, initial_value=b)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)

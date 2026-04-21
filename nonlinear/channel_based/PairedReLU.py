@@ -14,12 +14,12 @@ class PairedReLU(ChannelBasedActivationFunction):
     ):
         super().__init__()
         # scale params
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
-        self.c = torch.nn.Parameter(torch.full((channels,), c))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
+        self.c = self.get_parameter(channels=channels, initial_value=c)
 
         # threshold params
-        self.b = torch.nn.Parameter(torch.full((channels,), b))
-        self.d = torch.nn.Parameter(torch.full((channels,), d))
+        self.b = self.get_parameter(channels=channels, initial_value=b)
+        self.d = self.get_parameter(channels=channels, initial_value=d)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)

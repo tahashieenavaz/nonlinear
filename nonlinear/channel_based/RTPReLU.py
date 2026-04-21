@@ -6,7 +6,7 @@ class RTPReLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, sigma: float = 0.75, a: float = 1.0):
         super().__init__()
         self.sigma = sigma
-        self.a = torch.nn.Parameter(torch.full((channels,), float(a)))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)

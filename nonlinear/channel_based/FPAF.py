@@ -16,8 +16,8 @@ class FPAF(ChannelBasedActivationFunction):
         super().__init__()
         self.mu = mu
         self.nu = nu
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
-        self.b = torch.nn.Parameter(torch.full((channels,), b))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
+        self.b = self.get_parameter(channels=channels, initial_value=b)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)

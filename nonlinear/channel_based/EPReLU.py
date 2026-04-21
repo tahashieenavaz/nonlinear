@@ -6,7 +6,7 @@ class EPReLU(ChannelBasedActivationFunction):
     def __init__(self, channels: int, *, alpha: float = 0.2, a: float = 1.0):
         super().__init__()
         self.alpha = alpha
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
         self.register_buffer("k", torch.ones(channels))
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:

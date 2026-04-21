@@ -7,7 +7,7 @@ class RMAF(ChannelBasedActivationFunction):
         self, channels: int, *, b: float = 1.0, c: float = 1.0, a: float = 1.0
     ):
         super().__init__()
-        self.a = torch.nn.Parameter(torch.full((channels,), a))
+        self.a = self.get_parameter(channels=channels, initial_value=a)
         self.b = b
         self.c = c
 
