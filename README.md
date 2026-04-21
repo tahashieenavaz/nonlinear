@@ -27,7 +27,10 @@ A hand-curated collections of activations functions for deep learning research.
 | 17 | [TanhLU](nonlinear/channel_based/TanhLU.py) | $f(x)=a\,\tanh(cx)+bx$ |
 
 </div>
+
 ## Static Activation Functions
+
+<div align="center">
 
 | ID | Activation Function | Formula |
 |---:|---|---|
@@ -105,3 +108,5 @@ A hand-curated collections of activations functions for deep learning research.
 | 72 | [Smish](nonlinear/static/Smish.py) | $f(x)=x\tanh(\log(1+\sigma(x)))$ |
 | 73 | [SigLU](nonlinear/static/SigLU.py) | $f(x)=x$ if $x\ge0$, else $\dfrac{1-e^{-2x}}{1+e^{-2x}}$ |
 | 74 | [AOAF](nonlinear/static/AOAF.py) | $f(x)=\mathrm{ReLU}(x-b\bar{x})+c\bar{x}$, $\bar{x}$ is channel mean over batch/spatial dims |
+
+</div>
