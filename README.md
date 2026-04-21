@@ -6,8 +6,6 @@ A hand-curated collections of activations functions for deep learning research.
 
 <div align="center">
 
-Listed in [nonlinear/channel_based/__init__.py](nonlinear/channel_based/__init__.py).
-
 | ID | Activation Function | Formula |
 |---:|---|---|
 | 1 | [DPReLU](nonlinear/channel_based/DPReLU.py) | $f(x)=ax$ if $x\ge0$, else $bx$ |
@@ -30,8 +28,6 @@ Listed in [nonlinear/channel_based/__init__.py](nonlinear/channel_based/__init__
 
 </div>
 ## Static Activation Functions
-
-Listed in [nonlinear/static/__init__.py](nonlinear/static/__init__.py).
 
 | ID | Activation Function | Formula |
 |---:|---|---|
