@@ -3,7 +3,7 @@ from ..ActivationFunction import ActivationFunction
 
 
 class DRLU(ActivationFunction):
-    def __init__(self, alpha: float = 0.08):
+    def __init__(self, *, alpha: float = 0.08):
         super().__init__()
         self.alpha = alpha
 
