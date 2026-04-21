@@ -3,7 +3,7 @@ from ..ActivationFunction import ActivationFunction
 
 
 class NLReLU(ActivationFunction):
-    def __init__(self, beta: float = 1.05):
+    def __init__(self, *, beta: float = 1.05):
         super().__init__()
         self.beta = beta
 
