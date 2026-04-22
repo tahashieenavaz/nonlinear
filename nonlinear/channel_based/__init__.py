@@ -3,6 +3,7 @@ from .DELU import DELU
 from .DPReLU import DPReLU
 from .DualLine import DualLine
 from .EPReLU import EPReLU
+from .FELU import FELU
 from .FPAF import FPAF
 from .FReLU import FReLU
 from .LearnableTeLU import LearnableTeLU
