@@ -1,4 +1,5 @@
 from .BLU import BLU
+from .DELU import DELU
 from .DPReLU import DPReLU
 from .DualLine import DualLine
 from .EPReLU import EPReLU
@@ -7,6 +8,7 @@ from .FReLU import FReLU
 from .LearnableTeLU import LearnableTeLU
 from .LeLeLU import LeLeLU
 from .PairedReLU import PairedReLU
+from .ParametricSwish import ParametricSwish
 from .PiLU import PiLU
 from .PREU import PREU
 from .PTELU import PTELU
