@@ -10,6 +10,7 @@ from .FPAF import FPAF
 from .FReLU import FReLU
 from .LearnableTeLU import LearnableTeLU
 from .LeLeLU import LeLeLU
+from .LPSELU import LPSELU
 from .MPELU import MPELU
 from .PairedReLU import PairedReLU
 from .ParametricSwish import ParametricSwish
