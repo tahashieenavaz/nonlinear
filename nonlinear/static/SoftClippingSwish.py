@@ -10,4 +10,4 @@ class SoftClippingSwish(ActivationFunction):
         return x * torch.sigmoid(x)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return torch.max(0, self.swish(x))
+        return torch.relu(self.swish(x))
