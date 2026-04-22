@@ -1,3 +1,4 @@
+from .BLU import BLU
 from .DPReLU import DPReLU
 from .DualLine import DualLine
 from .EPReLU import EPReLU
@@ -9,9 +10,12 @@ from .PairedReLU import PairedReLU
 from .PiLU import PiLU
 from .PREU import PREU
 from .PTELU import PTELU
+from .ReBLU import ReBLU
+from .ReLTanh import ReLTanh
 from .RMAF import RMAF
 from .RTPReLU import RTPReLU
 from .ShiLU import ShiLU
 from .StarReLU import StarReLU
 from .TaLU import TaLU
 from .TanhLU import TanhLU
+from .TReLU import TReLU
