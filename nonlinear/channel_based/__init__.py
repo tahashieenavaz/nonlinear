@@ -32,3 +32,4 @@ from .StarReLU import StarReLU
 from .TaLU import TaLU
 from .TanhLU import TanhLU
 from .TReLU import TReLU
+from .TunableSwish import TunableSwish
