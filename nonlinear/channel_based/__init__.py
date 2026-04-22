@@ -15,6 +15,7 @@ from .ReLTanh import ReLTanh
 from .RMAF import RMAF
 from .RTPReLU import RTPReLU
 from .ShiLU import ShiLU
+from .SoftClippingMish import SoftClippingMish
 from .StarReLU import StarReLU
 from .TaLU import TaLU
 from .TanhLU import TanhLU
