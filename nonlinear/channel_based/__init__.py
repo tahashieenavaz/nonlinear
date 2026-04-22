@@ -11,6 +11,7 @@ from .LeLeLU import LeLeLU
 from .PairedReLU import PairedReLU
 from .ParametricSwish import ParametricSwish
 from .PELU import PELU
+from .PFELU import PFELU
 from .PiLU import PiLU
 from .PREU import PREU
 from .PTELU import PTELU
