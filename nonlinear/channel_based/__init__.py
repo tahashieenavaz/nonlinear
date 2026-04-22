@@ -18,6 +18,7 @@ from .PEReLU import PEReLU
 from .PFELU import PFELU
 from .PiLU import PiLU
 from .PREU import PREU
+from .PSELU import PSELU
 from .PTELU import PTELU
 from .ReBLU import ReBLU
 from .ReLTanh import ReLTanh
