@@ -7,7 +7,7 @@ class ActivationFunction(torch.nn.Module):
         raise NotImplementedError("Subclasses must implement forward()")
 
     @torch.no_grad()
-    def plot(self, x_range=(-5, 5), num_points=1000):
+    def plot(self, x_range: tuple = (-5, 5), num_points: int = 1000) -> None:
         self.eval()
 
         x = torch.linspace(x_range[0], x_range[1], num_points)
