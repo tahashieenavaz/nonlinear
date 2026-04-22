@@ -1,7 +1,8 @@
 import torch
+from ..ActivationFunction import ActivationFunction
 
 
-class SelfArctan(torch.nn.Module):
+class SelfArctan(ActivationFunction):
     def __init__(self):
         super().__init__()
 
