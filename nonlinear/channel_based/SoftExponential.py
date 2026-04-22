@@ -1,5 +1,4 @@
 import torch
-from math import log
 from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
@@ -12,5 +11,5 @@ class SoftExponential(ChannelBasedActivationFunction):
         shape = self.get_shape(x)
         a = self.a.view(shape)
         alef = (torch.exp(x) - 1) / a + a
-        be = -log(1 - a * (x + a)) / a
+        be = -torch.log(1 - a * (x + a)) / a
         return torch.where(a > 0, alef, torch.where(a < 0, be, 0))
