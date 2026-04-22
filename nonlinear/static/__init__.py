@@ -70,5 +70,6 @@ from .PoLU import PoLU
 from .GCU import GCU
 from .SigmoidDerivative import SigmoidDerivative
 from .Smish import Smish
+from .SoftClippingSwish import SoftClippingSwish
 from .SigLU import SigLU
 from .AOAF import AOAF
