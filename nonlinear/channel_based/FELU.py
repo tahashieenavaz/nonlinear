@@ -1,4 +1,5 @@
 import torch
+from math import log
 from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
@@ -7,7 +8,7 @@ class FELU(ChannelBasedActivationFunction):
         super().__init__()
         self.a = self.get_parameter(channels=channels, initial_value=a)
 
-    def forward(self, x: torch.Tensor):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)
         a = self.a.view(shape)
-        return torch.where(x >= 0, x, a * (torch.tensor(2.0).pow(x / torch.log(2)) - 1))
+        return torch.where(x >= 0, x, a * (torch.tensor(2.0).pow(x / log(2)) - 1))
