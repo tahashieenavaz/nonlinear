@@ -12,6 +12,7 @@ from .MPELU import MPELU
 from .PairedReLU import PairedReLU
 from .ParametricSwish import ParametricSwish
 from .PELU import PELU
+from .PEReLU import PEReLU
 from .PFELU import PFELU
 from .PiLU import PiLU
 from .PREU import PREU
