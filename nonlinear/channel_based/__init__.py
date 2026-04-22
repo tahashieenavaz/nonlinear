@@ -25,6 +25,7 @@ from .RMAF import RMAF
 from .RTPReLU import RTPReLU
 from .ShiLU import ShiLU
 from .SoftClippingMish import SoftClippingMish
+from .SoftExponential import SoftExponential
 from .StarReLU import StarReLU
 from .TaLU import TaLU
 from .TanhLU import TanhLU
