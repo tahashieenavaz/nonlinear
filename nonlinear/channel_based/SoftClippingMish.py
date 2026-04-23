@@ -10,4 +10,4 @@ class SoftClippingMish(ChannelBasedActivationFunction):
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)
         a = self.a.view(shape)
-        return torch.max(0, x * torch.tanh(torch.nn.functional.softplus(a * x)))
+        return torch.relu(x * torch.tanh(torch.nn.functional.softplus(a * x)))
