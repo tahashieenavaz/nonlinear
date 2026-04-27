@@ -1,5 +1,5 @@
 from flax import linen as nn
 
 
-class ActivationFunction(nn.Module):
+class JAXActivationFunction(nn.Module):
     pass
