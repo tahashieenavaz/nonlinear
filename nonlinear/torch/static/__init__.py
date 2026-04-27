@@ -26,6 +26,7 @@ from .SlopedReLU import SlopedReLU
 from .ReCU import ReCU
 from .MinSin import MinSin
 from .LaLU import LaLU
+from .LiReLU import LiReLU
 from .mReLU import mReLU
 from .FlattedTSwish import FlattedTSwish
 from .ERF import ERF
