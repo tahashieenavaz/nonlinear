@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import ada
 
 
 class ADA(ActivationFunction):
@@ -7,4 +8,4 @@ class ADA(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return torch.where(x >= 0, x, x * torch.exp(x))
+        return ada(x)
