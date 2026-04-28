@@ -46,7 +46,6 @@ A hand-curated collections of activations functions for deep learning research.
 | 10 | [TBSReLU](nonlinear/static/TBSReLU.py) | $f(x)=x\tanh\!\left(\dfrac{1-e^{-x}}{1+e^{-x}}\right)$ |
 | 11 | [ASiLU](nonlinear/static/ASiLU.py) | $f(x)=\arctan\!\left(\dfrac{x}{1+e^{-x}}\right)$ |
 | 12 | [NoisyReLU](nonlinear/static/NoisyReLU.py) | $f(x)=x+\epsilon\,\mathrm{std}(x)$ if $x\ge0$, else $0$; $\epsilon\sim\mathcal{N}(0,1)$ |
-| 13 | [ExponentialDLReLU](nonlinear/static/ExponentialDLReLU.py) | $f(x)=x$ if $x\ge0$, else $(ae^{-b_t})x$ |
 | 14 | [SaRa](nonlinear/static/SaRa.py) | $f(x)=x$ if $x\ge0$, else $\dfrac{x}{1+\alpha e^{-\beta x}}$ |
 | 15 | [SiELU](nonlinear/static/SiELU.py) | $f(x)=x\,\sigma\!\left(2\sqrt{2/\pi}(x+0.044715x^3)\right)$ |
 | 16 | [EANAF](nonlinear/static/EANAF.py) | $f(x)=x\tanh(\mathrm{softplus}(x)/2)$ |
@@ -67,7 +66,6 @@ A hand-curated collections of activations functions for deep learning research.
 | 31 | [ERF](nonlinear/static/ERF.py) | $f(x)=x\,\mathrm{erf}(\alpha x)$ |
 | 32 | [RePU](nonlinear/static/RePU.py) | $f(x)=\mathrm{ReLU}(x^{\alpha})$ |
 | 33 | [TangentBipolarSigmoidReLU](nonlinear/static/TangentBipolarSigmoidReLU.py) | $f(x)=x\tanh\!\left(\dfrac{1-e^{-x}}{1+e^{-x}}\right)$ |
-| 34 | [BaseDLReLU](nonlinear/static/BaseDLReLU.py) | $f(x)=x$ if $x\ge0$, else $sx$; $s=ab_t$ (linear) or $s=ae^{-b_t}$ (exp) |
 | 35 | [Logish](nonlinear/static/Logish.py) | $f(x)=x\log(1+\sigma(x))$ |
 | 36 | [TripleStateSwish](nonlinear/static/TripleStateSwish.py) | $f(x)=x\sigma(x)[\sigma(x)+\sigma(x-\alpha)+\sigma(x-\beta)]$ |
 | 37 | [ReQU](nonlinear/static/ReQU.py) | $f(x)=\mathrm{ReLU}(x^2)$ |
@@ -97,7 +95,6 @@ A hand-curated collections of activations functions for deep learning research.
 | 61 | [REU](nonlinear/static/REU.py) | $f(x)=x$ if $x\ge0$, else $xe^x$ |
 | 62 | [ReSech](nonlinear/static/ReSech.py) | $f(x)=x\,\mathrm{sech}(x)=\dfrac{2x}{e^x+e^{-x}}$ |
 | 63 | [SineReLU](nonlinear/static/SineReLU.py) | $f(x)=x$ if $x\ge0$, else $\epsilon(\sin x-\cos x)$ |
-| 64 | [DLReLU](nonlinear/static/DLReLU.py) | $f(x)=x$ if $x\ge0$, else $(ab_t)x$ |
 | 65 | [DLU](nonlinear/static/DLU.py) | $f(x)=x$ if $x\ge0$, else $\dfrac{x}{1-x}$ |
 | 66 | [CaLU](nonlinear/static/CaLU.py) | $f(x)=x\left(\dfrac{\arctan(x)}{\pi}+b\right)$ |
 | 67 | [RandomizedSlopedReLU](nonlinear/static/RandomizedSlopedReLU.py) | $f(x)=\alpha x$ if $x\ge0$, else $0$; $\alpha\sim U(1,10)$ at init |

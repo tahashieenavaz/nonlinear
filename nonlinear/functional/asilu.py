@@ -8,5 +8,5 @@ def asilu(x: torch.Tensor, *, inplace: bool = False):
         x.mul_(alpha)
         x.atan_()
         return x
-    else:
-        return torch.arctan(x * alpha)
+
+    return torch.arctan(x * alpha)

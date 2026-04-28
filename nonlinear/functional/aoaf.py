@@ -10,5 +10,5 @@ def aoaf(x: torch.Tensor, *, b: float = 0.17, c: float = 0.17, inplace: bool = F
         x.relu_()
         x.add_(c * a)
         return x
-    else:
-        return torch.relu(x - b * a) + c * a
+
+    return torch.relu(x - b * a) + c * a

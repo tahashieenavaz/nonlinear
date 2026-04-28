@@ -10,7 +10,6 @@ from .MSiLU import MSiLU
 from .TBSReLU import TBSReLU
 from .ASiLU import ASiLU
 from .NoisyReLU import NoisyReLU
-from .ExponentialDLReLU import ExponentialDLReLU
 from .SaRa import SaRa
 from .SiELU import SiELU
 from .EANAF import EANAF
@@ -32,7 +31,6 @@ from .FlattedTSwish import FlattedTSwish
 from .ERF import ERF
 from .RePU import RePU
 from .TangentBipolarSigmoidReLU import TangentBipolarSigmoidReLU
-from .BaseDLReLU import BaseDLReLU
 from .Logish import Logish
 from .TripleStateSwish import TripleStateSwish
 from .ReQU import ReQU
@@ -62,7 +60,6 @@ from .TSReLU import TSReLU
 from .REU import REU
 from .ReSech import ReSech
 from .SineReLU import SineReLU
-from .DLReLU import DLReLU
 from .DLU import DLU
 from .CaLU import CaLU
 from .RandomizedSlopedReLU import RandomizedSlopedReLU

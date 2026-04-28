@@ -1,13 +1,13 @@
 import torch
-import math
 from ..ActivationFunction import ActivationFunction
+from ..functional import calu
 
 
 class CaLU(ActivationFunction):
-    def __init__(self, *, b: float = 0.5):
+    def __init__(self, *, b: float = 0.5, inplace: bool = False):
         super().__init__()
+        self.inplace = inplace
         self.b = b
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        a = torch.arctan(x) / math.pi
-        return x * (a + self.b)
+        return calu(x, b=self.b, inplace=self.inplace)
