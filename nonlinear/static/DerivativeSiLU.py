@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import derivative_silu
 
 
 class DerivativeSiLU(ActivationFunction):
@@ -7,7 +8,4 @@ class DerivativeSiLU(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        a = torch.sigmoid(x)
-        b = 1 - torch.sigmoid(x)
-        c = 1 + x * b
-        return a * c
+        return derivative_silu(x)
