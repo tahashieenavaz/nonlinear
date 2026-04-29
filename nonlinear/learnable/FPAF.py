@@ -3,6 +3,10 @@ from typing import Callable
 from ..ChannelBasedActivationFunction import ChannelBasedActivationFunction
 
 
+def identity(x: torch.Tensor):
+    return x
+
+
 class FPAF(ChannelBasedActivationFunction):
     def __init__(
         self,
@@ -11,7 +15,7 @@ class FPAF(ChannelBasedActivationFunction):
         mu: Callable[[torch.Tensor], torch.Tensor] = torch.sin,
         nu: Callable[[torch.Tensor], torch.Tensor] = torch.exp,
         a: float = 1.0,
-        b: float = 1.0,
+        b: float = 0.05,
     ):
         super().__init__()
         self.mu = mu
