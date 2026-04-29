@@ -4,4 +4,4 @@ from .LearnableActivationFunction import LearnableActivationFunction
 from .static import *
 from .learnable import *
 
-__version__ = "0.0.14"
+__version__ = "0.0.15"
