@@ -10,7 +10,7 @@ class ActivationFunction(torch.nn.Module):
         except:
             fresh_instance = self.__class__(512)
 
-        x = torch.randn(2, 512)
+        x = torch.linspace(-10, 10, 1024).reshape(2, 512)
         y = fresh_instance(x)
 
         x = x.flatten().cpu()
