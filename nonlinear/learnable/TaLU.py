@@ -10,8 +10,8 @@ class TaLU(ChannelBasedActivationFunction):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)
-        a = torch.abs(self.a.view(shape))
-        b = torch.abs(self.b.view(shape))
+        a = self.a.view(shape)
+        b = self.b.view(shape)
         tanh_x = torch.tanh(x)
         tanh_a = torch.tanh(a)
         return torch.where(x >= b, x, torch.where(x > a, tanh_x, tanh_a))
