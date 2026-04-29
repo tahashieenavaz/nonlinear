@@ -8,8 +8,8 @@ class PiLU(ChannelBasedActivationFunction):
     ):
         super().__init__()
         self.a = self.get_parameter(channels=channels, initial_value=a)
-        self.b = self.get_parameter(channels=channels, initial_value=a)
-        self.c = self.get_parameter(channels=channels, initial_value=a)
+        self.b = self.get_parameter(channels=channels, initial_value=b)
+        self.c = self.get_parameter(channels=channels, initial_value=c)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         shape = self.get_shape(x)
