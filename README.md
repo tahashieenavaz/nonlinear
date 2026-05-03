@@ -22,3 +22,12 @@ In order to gain the best performance speed **always** use `PyTorch` with a vers
   Eprint = {arXiv:2402.09092},
 }
 ```
+
+```bibtex
+@misc{1505.00853,
+  Title = {Empirical Evaluation of Rectified Activations in Convolutional Network},
+  Author = {Bing Xu and Naiyan Wang and Tianqi Chen and Mu Li},
+  Year = {2015},
+  Eprint = {arXiv:1505.00853},
+}
+```
