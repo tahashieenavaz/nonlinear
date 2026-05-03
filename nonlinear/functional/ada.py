@@ -13,9 +13,9 @@ class __Ada(torch.autograd.Function):
         return torch.where(x >= 0, x, x * torch.exp(x))
 
     @staticmethod
-    def backward(ctx, grad_output: torch.Tensor):
+    def backward(ctx, gradients: torch.Tensor):
         (x,) = ctx.saved_tensors
-        grad_x = grad_output.clone()
+        grad_x = gradients.clone()
         negative_mask = x < 0
         x_neg = x[negative_mask]
         grad_x[negative_mask] *= torch.exp(x_neg) * (1 + x_neg)
