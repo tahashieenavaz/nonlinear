@@ -1,6 +1,11 @@
 import torch
 from ..LearnableActivationFunction import LearnableActivationFunction
 
+##########
+# Implementation adapted from the approach described in:
+# https://link.springer.com/article/10.1007/s11227-024-06057-1
+##########
+
 
 class Trish(LearnableActivationFunction):
     def __init__(self, *, alpha: float = 0.1, beta: float = 0.5):
