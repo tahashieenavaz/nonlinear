@@ -1,7 +1,5 @@
 import torch
 
 
-def selfarctan(x: torch.Tensor, *, inplace: bool = False):
-    if inplace:
-        return x.mul_(torch.arctan(x))
+def selfarctan(x: torch.Tensor) -> torch.Tensor:
     return x * torch.arctan(x)

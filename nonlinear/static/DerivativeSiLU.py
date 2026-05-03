@@ -4,9 +4,8 @@ from ..functional import derivative_silu
 
 
 class DerivativeSiLU(ActivationFunction):
-    def __init__(self, *, inplace: bool = False):
+    def __init__(self):
         super().__init__()
-        self.inplace = inplace
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return derivative_silu(x, inplace=self.inplace)
+        return derivative_silu(x)
