@@ -2,7 +2,6 @@ import torch
 from ..functional import aoaf
 from ..ActivationFunction import ActivationFunction
 
-
 """
 Paper: https://doi.org/10.3390/electronics11223799
 
@@ -21,6 +20,9 @@ class AOAF(ActivationFunction):
         self.b = b
         self.c = c
         self.inplace = inplace
+
+    def extra_repr(self) -> str:
+        return f"b={self.b}, c={self.c}"
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return aoaf(x, b=self.b, c=self.c, inplace=self.inplace)
