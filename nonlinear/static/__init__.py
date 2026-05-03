@@ -72,3 +72,4 @@ from .AOAF import AOAF
 from .DeepFourier import DeepFourier
 from .NeLU import NeLU
 from .BSiLU import BSiLU
+from .ExpAbsTanh import ExpAbsTanh
