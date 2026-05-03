@@ -31,3 +31,12 @@ In order to gain the best performance speed **always** use `PyTorch` with a vers
   Eprint = {arXiv:1505.00853},
 }
 ```
+
+```bibtex
+@misc{2509.22358,
+  Title = {Stochastic activations},
+  Author = {Maria Lomeli and Matthijs Douze and Gergely Szilvasy and Loic Cabannes and Jade Copet and Sainbayar Sukhbaatar and Jason Weston and Gabriel Synnaeve and Pierre-Emmanuel Mazaré and Hervé Jégou},
+  Year = {2025},
+  Eprint = {arXiv:2509.22358},
+}
+```
