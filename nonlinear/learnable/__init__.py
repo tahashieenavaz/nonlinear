@@ -36,3 +36,4 @@ from .TanhLU import TanhLU
 from .TReLU import TReLU
 from .TunableSwish import TunableSwish
 from .ERF import ERF
+from .Trish import Trish
