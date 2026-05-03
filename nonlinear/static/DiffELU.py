@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import diffelu
 
 
 class DiffELU(ActivationFunction):
@@ -8,6 +9,8 @@ class DiffELU(ActivationFunction):
         self.a = a
         self.b = b
 
+    def extra_repr(self) -> str:
+        return f"a={self.a}, b={self.b}"
+
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        delta = x * x.exp() - self.b * torch.exp(self.b * x)
-        return torch.where(x >= 0, x, self.a * delta)
+        return diffelu(x, a=self.a, b=self.b)
