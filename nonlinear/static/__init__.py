@@ -70,3 +70,5 @@ from .SoftClippingSwish import SoftClippingSwish
 from .SigLU import SigLU
 from .AOAF import AOAF
 from .DeepFourier import DeepFourier
+from .NeLU import NeLU
+from .BSiLU import BSiLU
