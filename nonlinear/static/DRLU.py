@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import drlu
 
 
 class DRLU(ActivationFunction):
@@ -8,4 +9,4 @@ class DRLU(ActivationFunction):
         self.alpha = alpha
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return torch.where(x - self.alpha >= 0, x - self.alpha, 0)
+        return drlu(x, alpha=self.alpha)
