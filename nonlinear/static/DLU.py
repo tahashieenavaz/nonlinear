@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import dlu
 
 
 class DLU(ActivationFunction):
@@ -7,4 +8,4 @@ class DLU(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return torch.where(x >= 0, x, x / (1 - x))
+        return dlu(x)
