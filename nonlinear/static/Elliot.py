@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import elliot
 
 
 class Elliot(ActivationFunction):
@@ -7,4 +8,4 @@ class Elliot(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return 0.5 + torch.div(0.5 * x, 1 + torch.abs(x))
+        return elliot(x)

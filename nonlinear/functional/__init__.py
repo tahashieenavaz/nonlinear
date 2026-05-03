@@ -8,6 +8,8 @@ from .derivative_silu import derivative_silu
 from .dlu import dlu
 from .drlu import drlu
 from .eanaf import eanaf
+from .elliot import elliot
+from .expexpish import expexpish
 from .double_silu import double_silu
 from .polylu import polylu
 from .self_arctan import self_arctan

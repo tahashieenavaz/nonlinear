@@ -28,7 +28,6 @@ from .LaLU import LaLU
 from .LiReLU import LiReLU
 from .mReLU import mReLU
 from .FlattedTSwish import FlattedTSwish
-from .ERF import ERF
 from .RePU import RePU
 from .TangentBipolarSigmoidReLU import TangentBipolarSigmoidReLU
 from .Logish import Logish

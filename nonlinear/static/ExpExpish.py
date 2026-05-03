@@ -1,5 +1,6 @@
 import torch
 from ..ActivationFunction import ActivationFunction
+from ..functional import expexpish
 
 
 class ExpExpish(ActivationFunction):
@@ -7,4 +8,4 @@ class ExpExpish(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return x * torch.exp(-torch.exp(-x))
+        return expexpish(x)
