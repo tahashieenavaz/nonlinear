@@ -40,3 +40,12 @@ In order to gain the best performance speed **always** use `PyTorch` with a vers
   Eprint = {arXiv:2509.22358},
 }
 ```
+
+```bibtex
+@misc{2601.16446,
+  Title = {Brownian ReLU(Br-ReLU): A New Activation Function for a Long-Short Term Memory (LSTM) Network},
+  Author = {George Awiakye-Marfo and Elijah Agbosu and Victoria Mawuena Barns and Samuel Asante Gyamerah},
+  Year = {2026},
+  Eprint = {arXiv:2601.16446},
+}
+```
