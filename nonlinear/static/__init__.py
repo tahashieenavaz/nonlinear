@@ -44,7 +44,6 @@ from .DerivativeSiLU import DerivativeSiLU
 from .NLReLU import NLReLU
 from .IpLU import IpLU
 from .ThLU import ThLU
-from .RReLU import RReLU
 from .PolyLU import PolyLU
 from .Suish import Suish
 from .TSiLU import TSiLU
