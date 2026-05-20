@@ -9,11 +9,11 @@ class DeepFourier(ActivationFunction):
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         if x.dim() == 4:
             # 4D Tensor: (Batch, Channels, Height, Width)
-            # We must concatenate along the channel dimension (dim=1)
+            # we must concatenate along the channel dimension (dim=1)
             feature_dim = 1
         else:
             # 2D Tensor: (Batch, Features)
-            # We concatenate along the feature dimension (dim=-1 or dim=1)
+            # we concatenate along the feature dimension (dim=-1 or dim=1)
             feature_dim = -1
 
         return torch.cat([torch.sin(x), torch.cos(x)], dim=feature_dim)
