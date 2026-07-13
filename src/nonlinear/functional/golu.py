@@ -1,5 +1,6 @@
 import torch
-from nonlinear.functions import gompertz
+from nonlinear.helpers import gompertz
+
 
 def golu(x: torch.Tensor):
     return x * gompertz(x)
