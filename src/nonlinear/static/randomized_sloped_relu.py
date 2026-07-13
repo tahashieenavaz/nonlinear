@@ -1,5 +1,5 @@
 import random
-from .SlopedReLU import SlopedReLU
+from .sloped_relu import SlopedReLU
 
 
 class RandomizedSlopedReLU(SlopedReLU):
