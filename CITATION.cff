@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Nonlinear: Activation Functions Library"
+authors:
+  - family-names: "Shieenavaz"
+    given-names: "Taha"
+version: "0.0.0"
+date-released: "YYYY-MM-DD"
+url: "https://github.com/tahashieenavaz/nonlinear"
