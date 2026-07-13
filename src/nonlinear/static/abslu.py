@@ -9,4 +9,4 @@ class AbsLU(ActivationFunction):
         self.alpha = alpha
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return abslu(x, alpha=self.alpha)
+        return abslu(x=x, alpha=self.alpha)
