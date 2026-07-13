@@ -24,4 +24,4 @@ class AOAF(ActivationFunction):
         return f"b={self.b}, c={self.c}"
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return aoaf(x, b=self.b, c=self.c)
+        return aoaf(x=x, b=self.b, c=self.c)

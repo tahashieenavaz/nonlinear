@@ -1,5 +1,6 @@
 import torch
 from ..activation_function import ActivationFunction
+from ..functional import bsilu
 
 
 class BSiLU(ActivationFunction):
@@ -8,4 +9,4 @@ class BSiLU(ActivationFunction):
         self.alpha = alpha
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return (x + self.alpha) * torch.sigmoid(x) - self.alpha / 2
+        return bsilu(x=x, alpha=self.alpha)

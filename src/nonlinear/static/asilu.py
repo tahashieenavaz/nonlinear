@@ -8,4 +8,4 @@ class ASiLU(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return asilu(x)
+        return asilu(x=x)

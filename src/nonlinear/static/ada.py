@@ -8,4 +8,4 @@ class ADA(ActivationFunction):
         super().__init__()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return ada(x)
+        return ada(x=x)

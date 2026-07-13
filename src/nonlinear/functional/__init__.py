@@ -17,3 +17,4 @@ from .aoaf import aoaf
 from .drlu import drlu
 from .dlu import dlu
 from .calu import calu
+from .bsilu import bsilu
