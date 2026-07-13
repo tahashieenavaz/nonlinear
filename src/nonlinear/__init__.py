@@ -1,4 +1,4 @@
 from .learnable_activation_function import LearnableActivationFunction
 from .stochastic_activation_function import StochasticActivationFunction
-from .channel_based_activation_function import ChannelBasedActivationFunction
 from .activation_function import ActivationFunction
+from .channel_based_activation_function import ChannelBasedActivationFunction
