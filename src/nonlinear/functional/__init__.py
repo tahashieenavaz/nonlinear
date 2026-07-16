@@ -9,6 +9,7 @@ from .eanaf import eanaf
 from .crelu import crelu
 from .double_silu import double_silu
 from .self_arctan import self_arctan
+from .bsilu import bsilu
 from .diffelu import diffelu
 from .elliot import elliot
 from .derivative_silu import derivative_silu
@@ -17,4 +18,3 @@ from .aoaf import aoaf
 from .drlu import drlu
 from .dlu import dlu
 from .calu import calu
-from .bsilu import bsilu
