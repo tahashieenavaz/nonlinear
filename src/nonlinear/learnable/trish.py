@@ -1,5 +1,5 @@
 import torch
-from ..learnable_activation_function import LearnableActivationFunction
+from nonlinear import LearnableActivationFunction
 
 ##########
 # Implementation adapted from the approach described in:
