@@ -1,4 +1,4 @@
-from .TSReLU import TSReLU
+from .tsrelu import TSReLU
 
 
 class TangentSigmoidReLU(TSReLU):
