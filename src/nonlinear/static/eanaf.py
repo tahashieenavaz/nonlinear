@@ -2,8 +2,8 @@ import torch
 from typing import Callable
 from nonlinear import ActivationFunction
 from nonlinear.functional import eanaf
-from ..functional.eanaf import __g
-from ..functional.eanaf import __h
+from nonlinear.functional.eanaf import __g
+from nonlinear.functional.eanaf import __h
 
 
 class EANAF(ActivationFunction):
