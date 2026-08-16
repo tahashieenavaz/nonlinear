@@ -1,4 +1,4 @@
-from .NReLU import NReLU
+from .nrelu import NReLU
 
 
 class NoisyReLU(NReLU):
