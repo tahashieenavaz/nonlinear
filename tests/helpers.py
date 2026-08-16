@@ -7,4 +7,4 @@ def assert_equal(a, b, message: Optional[str] = None):
 
 
 def assert_almost_equal(a, b, epsilon: float = 1e-6, message: Optional[str] = None):
-    assert abs(a - b) < epsilon, message
+    assert a == pytest.approx(b, abs=epsilon), message
