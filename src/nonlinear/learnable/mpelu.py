@@ -1,5 +1,5 @@
 import torch
-from ..channel_based_activation_function import ChannelBasedActivationFunction
+from nonlinear import ChannelBasedActivationFunction
 
 
 class MPELU(ChannelBasedActivationFunction):

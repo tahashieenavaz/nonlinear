@@ -1,6 +1,6 @@
 import torch
 from math import log
-from ..channel_based_activation_function import ChannelBasedActivationFunction
+from nonlinear import ChannelBasedActivationFunction
 
 
 class FELU(ChannelBasedActivationFunction):
