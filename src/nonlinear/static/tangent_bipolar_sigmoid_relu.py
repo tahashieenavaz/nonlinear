@@ -1,4 +1,4 @@
-from .TBSReLU import TBSReLU
+from .tbsrelu import TBSReLU
 
 
 class TangentBipolarSigmoidReLU(TBSReLU):
