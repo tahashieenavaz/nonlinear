@@ -3,8 +3,6 @@ from .golu import golu
 from .abslu import abslu
 from .expexpish import expexpish
 from .asilu import asilu
-from .eanaf import __g
-from .eanaf import __h
 from .eanaf import eanaf
 from .crelu import crelu
 from .double_silu import double_silu
