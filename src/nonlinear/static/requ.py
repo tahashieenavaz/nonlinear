@@ -1,4 +1,4 @@
-from .RePU import RePU
+from .repu import RePU
 
 
 class ReQU(RePU):
