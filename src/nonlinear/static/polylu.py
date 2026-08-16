@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import polylu
+from nonlinear.functional import polylu
 
 
 class PolyLU(ActivationFunction):

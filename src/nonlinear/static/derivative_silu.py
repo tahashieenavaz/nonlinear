@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import derivative_silu
+from nonlinear.functional import derivative_silu
 
 
 class DerivativeSiLU(ActivationFunction):

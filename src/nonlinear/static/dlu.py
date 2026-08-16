@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import dlu
+from nonlinear.functional import dlu
 
 
 class DLU(ActivationFunction):

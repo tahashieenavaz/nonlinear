@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import expexpish
+from nonlinear.functional import expexpish
 
 
 class ExpExpish(ActivationFunction):

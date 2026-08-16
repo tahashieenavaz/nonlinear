@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import calu
+from nonlinear.functional import calu
 
 
 class CaLU(ActivationFunction):

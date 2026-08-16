@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import asilu
+from nonlinear.functional import asilu
 
 
 class ASiLU(ActivationFunction):

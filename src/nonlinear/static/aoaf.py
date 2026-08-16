@@ -1,5 +1,5 @@
 import torch
-from ..functional import aoaf
+from nonlinear.functional import aoaf
 from nonlinear import ActivationFunction
 
 """

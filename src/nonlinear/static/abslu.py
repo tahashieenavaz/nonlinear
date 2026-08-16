@@ -1,5 +1,5 @@
 import torch
-from ..functional import abslu
+from nonlinear.functional import abslu
 from nonlinear import ActivationFunction
 
 

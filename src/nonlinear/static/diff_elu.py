@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import diffelu
+from nonlinear.functional import diffelu
 
 
 class DiffELU(ActivationFunction):

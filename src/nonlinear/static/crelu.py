@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import crelu
+from nonlinear.functional import crelu
 
 
 class CReLU(ActivationFunction):

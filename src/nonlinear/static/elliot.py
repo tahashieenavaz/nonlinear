@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import elliot
+from nonlinear.functional import elliot
 
 
 class Elliot(ActivationFunction):

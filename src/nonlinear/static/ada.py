@@ -1,6 +1,6 @@
 import torch
 from nonlinear import ActivationFunction
-from ..functional import ada
+from nonlinear.functional import ada
 
 
 class ADA(ActivationFunction):

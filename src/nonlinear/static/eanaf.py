@@ -1,7 +1,7 @@
 import torch
 from typing import Callable
 from nonlinear import ActivationFunction
-from ..functional import eanaf
+from nonlinear.functional import eanaf
 from ..functional.eanaf import __g
 from ..functional.eanaf import __h
 
