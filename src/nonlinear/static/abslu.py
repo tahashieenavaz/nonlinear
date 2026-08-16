@@ -1,6 +1,6 @@
 import torch
 from ..functional import abslu
-from ..activation_function import ActivationFunction
+from nonlinear import ActivationFunction
 
 
 class AbsLU(ActivationFunction):

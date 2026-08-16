@@ -1,6 +1,6 @@
 import torch
 from enum import Enum
-from ..activation_function import ActivationFunction
+from nonlinear import ActivationFunction
 
 
 class PoLUAlphaValues(float, Enum):

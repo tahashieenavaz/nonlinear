@@ -1,5 +1,5 @@
 import torch
-from ..activation_function import ActivationFunction
+from nonlinear import ActivationFunction
 
 
 class TSiLU(ActivationFunction):
