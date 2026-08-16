@@ -1,5 +1,5 @@
 import torch
-from ..stochastic_activation_function import StochasticActivationFunction
+from nonlinear import StochasticActivationFunction
 
 
 class BrownianReLU(StochasticActivationFunction):
