@@ -1,5 +1,5 @@
 import torch
-from ..learnable_activation_function import LearnableActivationFunction
+from nonlinear import LearnableActivationFunction
 
 """
 AReLU: Attention-based Rectified Linear Unit (Chen et al., 2020)

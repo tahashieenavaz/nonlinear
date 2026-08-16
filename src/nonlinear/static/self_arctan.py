@@ -1,6 +1,6 @@
 import torch
-from ..activation_function import ActivationFunction
-from ..functional import self_arctan
+from nonlinear import ActivationFunction
+from nonlinear.functional import self_arctan
 
 
 class SelfArctan(ActivationFunction):

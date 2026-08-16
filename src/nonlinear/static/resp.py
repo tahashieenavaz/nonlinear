@@ -1,6 +1,6 @@
 import torch
 import math
-from ..activation_function import ActivationFunction
+from nonlinear import ActivationFunction
 
 
 class ReSP(ActivationFunction):

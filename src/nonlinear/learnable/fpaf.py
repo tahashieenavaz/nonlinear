@@ -1,6 +1,6 @@
 import torch
 from typing import Callable
-from ..channel_based_activation_function import ChannelBasedActivationFunction
+from nonlinear import ChannelBasedActivationFunction
 
 
 def identity(x: torch.Tensor):

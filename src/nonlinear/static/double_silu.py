@@ -1,6 +1,6 @@
 import torch
-from ..activation_function import ActivationFunction
-from ..functional import double_silu
+from nonlinear import ActivationFunction
+from nonlinear.functional import double_silu
 
 
 class DoubleSiLU(ActivationFunction):

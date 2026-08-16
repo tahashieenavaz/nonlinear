@@ -1,6 +1,6 @@
 import torch
-from ..functional import aoaf
-from ..activation_function import ActivationFunction
+from nonlinear.functional import aoaf
+from nonlinear import ActivationFunction
 
 """
 Paper: https://doi.org/10.3390/electronics11223799
