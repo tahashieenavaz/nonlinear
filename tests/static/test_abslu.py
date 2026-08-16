@@ -1,9 +1,12 @@
 import torch
 from nonlinear.functional import abslu
-from helpers import assert_equal
+from tests.helpers import assert_equal
 
 
 def test_abslu_accuracy():
-    x = torch.tensor(0.0)
-    expected_y = 0.0
-    assert_equal(abslu(x, alpha=0.18), expected_y)
+    x = [-1.0, -0.5, 0, 0.5, 1]
+    y = [0.18, 0.09, 0, 0.5, 1]
+    for a, b in zip(x, y):
+        a = torch.tensor(a)
+        b = torch.tensor(b)
+        assert_equal(abslu(a, alpha=0.18), b)
