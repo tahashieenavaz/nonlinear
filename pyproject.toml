@@ -21,6 +21,6 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
 ]
-dependencies = ["torch"]
+dependencies = ["torch", "matplotlib"]
 
 [tool.setuptools_scm]
