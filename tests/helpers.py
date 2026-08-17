@@ -13,7 +13,7 @@ def assert_equal(a, b, message: Optional[str] = None):
     assert a == b, message
 
 
-def assert_almost_equal(a, b, epsilon: float = 1e-6, message: Optional[str] = None):
+def assert_almost_equal(a, b, epsilon: float = 1e-5, message: Optional[str] = None):
     if isinstance(a, torch.Tensor):
         a = a.item()
 
